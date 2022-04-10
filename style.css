@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: peru;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menubar {
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+}
+
+.grid {
+    background-color: aliceblue;
+    /* width: 35%;
+    padding-bottom: 35%; */
+    width: 40vw;
+    height: 40vw;
+    align-self: center;
+}
+
+footer {
+    background-color: #000;
+    max-height: 100px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
