@@ -23,6 +23,20 @@ function removeBoxes()
     });
 }
 
+function changeColor()
+{
+    const targets = document.querySelectorAll('.grid div')
+    targets.forEach(target => 
+    {
+        target.addEventListener('mouseover', ()=>
+        {
+            target.style.backgroundColor = 'black';
+        })
+    })
+}
+
+// To the grid, add a mouseenter event, to add event listeners 
+
 btn.addEventListener('click', () =>
 {
     num = prompt('How many boxes do you want in a row?');
@@ -33,4 +47,6 @@ btn.addEventListener('click', () =>
     };
     removeBoxes();
     createBoxes(num);
+    changeColor();
 })
+
