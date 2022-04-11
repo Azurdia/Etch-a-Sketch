@@ -14,6 +14,15 @@ function createBoxes(num)
     };
 }
 
+function removeBoxes()
+{
+    const targets = document.querySelectorAll('.grid div')
+    targets.forEach(target =>
+    {
+        grid.removeChild(target);
+    });
+}
+
 btn.addEventListener('click', () =>
 {
     num = prompt('How many boxes do you want in a row?');
@@ -22,5 +31,6 @@ btn.addEventListener('click', () =>
         alert("Please input a positive integer less than 65!");
         return;
     };
+    removeBoxes();
     createBoxes(num);
 })
